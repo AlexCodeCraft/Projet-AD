@@ -11,13 +11,13 @@ Créer un domaine, ajouter des utilisateurs et des groupes, puis appliquer une s
 
 * Machine virtuelle installée sur VirtualBox avec Windows Server.
 * Configuration : 4 Go RAM, 50 Go disque, réseau interne.
-* **Capture :** `CreationVM.png`
+* **Capture :** `01_Creation_VM.png`
 
 ### 2. Installation et connexion administrateur
 
 * Installation de Windows Server avec interface graphique.
 * Première connexion avec le compte administrateur.
-* **Capture :** `LoginAdmin.png`
+* **Capture :** `02_Login_Admin.png`
 
 ### 3. Création du domaine Active Directory
 
@@ -25,8 +25,8 @@ Créer un domaine, ajouter des utilisateurs et des groupes, puis appliquer une s
 * Promotion du serveur en contrôleur de domaine `test.local`.
 * **Captures :**
 
-  * `Capture AD DS cocher pour installation.png`
-  * `creationDomain.png`
+  * `03_ADDS_Installation.png`
+  * `04_Creation_Domaine.png`
 
 ### 4. Création des utilisateurs et groupes
 
@@ -35,9 +35,9 @@ Créer un domaine, ajouter des utilisateurs et des groupes, puis appliquer une s
 * Attribution des membres aux groupes.
 * **Captures :**
 
-  * `creationUser.png`
-  * `RH et menbre.png`
-  * `GroupeFinance et menbre.png`
+  * `05_Creation_Utilisateurs.png`
+  * `06_Groupe_RH_Membres.png`
+  * `07_Groupe_Finance_Membres.png`
 
 ### 5. Mise en place d’une GPO
 
@@ -48,9 +48,9 @@ Créer un domaine, ajouter des utilisateurs et des groupes, puis appliquer une s
   * Interdiction du panneau de configuration.
 * **Captures :**
 
-  * `Capture de ma gpo Restriction_Pc et ses parametre cmdbloque.png`
-  * `interdire cmd.png`
-  * `interdire panneaux de config.png`
+  * `08_GPO_Restriction_PC.png`
+  * `09_Interdire_Acces_Cmd.png`
+  * `10_Interdire_Acces_PanneauConfig.png`
 
 ### 6. Tests de la GPO
 
@@ -59,9 +59,10 @@ Créer un domaine, ajouter des utilisateurs et des groupes, puis appliquer une s
 
   * L’invite de commandes est bloquée.
   * Le panneau de configuration est inaccessible.
-* **Capture :**
+* **Captures :**
 
-  * `panneau config bloque.png`
+  * `11_Test_User2_Cmd_Bloque.png`
+  * `12_Test_User2_PanneauConfig_Bloque.png`
 
 ## Résultat final
 
